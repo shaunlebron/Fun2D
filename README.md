@@ -186,4 +186,14 @@ All of the completed student games are in the "games" folder of this repository.
 
 [You can read my teaching journal here for more details about the experience](journal)
 
+In the classroom:
+
 ![classroom](classroom.jpg)
+
+In the computer lab:
+
+![lab1](lab1.jpg) ![lab2](lab2.jpg)
+
+Group photo after their presentation and tour at NASA:
+
+![group](group.jpg)
