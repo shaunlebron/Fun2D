@@ -67,4 +67,105 @@ You can create and preview images from the editor:
 
 ## Writing Code
 
-Each function should correspond to a "scene" in the game.  You can click the buttons at the top of the editor to go to that scene's code.
+The code in this editor will just consist of a "start" function and a list of other
+"scene" functions, each one corresponding to the scene's _main loop_.
+
+All functions are listed at the top of the editor as clickable buttons. You can
+click one of them to go to their respective position in the code.  The buttons
+will auto-highlight when viewing a specific function in code to let you know
+where you are.
+
+### 1. Creating the start function
+
+The code must have a `start` function, which is executed when the game first starts.
+This is where you must create your image objects, set their initial positions, and start
+the first "scene".
+
+```lua
+function start()
+
+	-- create image objects (using the names of the images in your editor)
+	background = image("background")
+	player = image("player")
+	enemy = image("enemy")
+	dead = image("dead")
+
+    -- initialize player position
+	player.x = 10
+	player.y = 200
+
+	-- initialize enemy position
+	enemy.x = 400
+	enemy.y = 200
+	enemy.dx = -1
+
+	-- start first scene
+	scene(game)
+end
+```
+
+### 2. Creating the game scene function
+
+Each scene is represented by a function that is executed every frame.  Here is
+the game scene.  It moves the enemy back and forth, moves the player if the
+keys are pressed, ends the scene if the player collides with the enemy, and
+draws the appropriate images.
+
+```lua
+function game()
+
+	-- move the enemy back and forth
+	enemy.x = enemy.x + enemy.dx
+	if enemy.x < 0 then
+		enemy.dx = 1
+	end
+	if enemy.x > 200 then
+		enemy.dx = -1
+	end
+
+	-- allow the player to move if keys are pressed
+	if key("left") then
+		player.x = player.x - 1
+	end
+	if key("right") then
+	    player.x = player.x + 1
+	end
+
+	-- go to "gameover" scene if you touch enemy
+	if collide(player, enemy) then
+		scene(gameover)
+	end
+
+	-- draw everything
+	draw(background)
+	draw(enemy)
+	draw(player)
+
+end
+```
+
+### 3. Creating the gameover scene function
+
+The gameover scene simply draws the "dead" image and restarts the game when you
+press enter:
+
+```lua
+function gameover()
+
+	-- restart game if player to presses enter
+	if key("enter") then
+
+		-- reset player and enemy positions
+		player.x = 10
+		enemy.x = 400
+
+		-- restart game
+		scene(game)
+
+	end
+
+	-- draw everything
+	draw(dead)
+
+end
+```
