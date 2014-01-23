@@ -169,3 +169,21 @@ function gameover()
 
 end
 ```
+
+## Conclusion and Results
+
+Classroom management was the biggest problem in the 6th grade classroom, which hindered
+the teaching and I had to leave most of the class behind so that the students who were
+paying attention would have a completed game.
+
+The students seemed to grasp the program flow and simple if-then instructions for the game.
+The concepts took a lot of repetition for them to sink in, but they demonstrated a basic
+understanding.  Starting every day with a worksheet that they could fill out during
+the short lecture on the day's topic, and then moving to the computer lab to build their
+game seemed to work well.
+
+All of the completed student games are in the "games" folder of this repository.
+
+[You can read my teaching journal here for more details about the experience](journal)
+
+![classroom](classroom.jpg)

@@ -1,0 +1,19 @@
+# Teaching Week 1
+
+_September 23, 2010_
+
+Yesterday, I taught my 6th grade class of 20 students. Getting their attention was pretty difficult. I would ask them a question, and they would immediately answer out and begin talking amongst themselves. Having a voice that projects well would be helpful.
+
+We went straight to the computer lab to try out Fun2D, a game development application I developed specifically for them. I had a game made for them to try out. This entire environment was bundled into a thumbdrive for each of them. I had to use Xenocode Post Builder to ensure that it would run without having to install any dependencies.
+
+I found myself racing around the computer lab, trying to help all of the students open the application. When most had finally got to playing the game, it ran about 1 frame per second. The game was running very, very slow on their computers. Everyone was disappointed and most were complaining. I was about to line all the kids up and go back to the classroom, but my team leader said to let them play a while, or else we would have to deal with more behavioral issues in the classroom. At least here they were occupying themselves. I was surprised to see that they were still glued to a game that was going 1 FPS.
+
+I walked around the room talking to the students. Some of them had opened multiple instances of Fun2D, because they had double-clicked the app many times while waiting for it to load. I also started giving each of the students a brief overview of how the Paint feature worked. Some students took to it really quickly. One student had already customized all the sprites in the game, and had made it his own. A girl caught her friend’s mistake when editing the code by putting in a missing quotation mark. Another student was adding a sword to the player sprite, while another replaced it with her own completely new character.
+
+I had written a long lesson plan, preparing to teach them basic principles of how the game framework operates. I prepared to teach them about Screen Coordinates, program flow, and drawing simple shapes and text on the screen. But I was so busy teaching each one how to paint and edit the images in the game because that’s all I could do.
+
+I read a blog that said I have 2 minutes tops when I’m lecturing kids before they lose complete focus. I had a silly idea of teaching them program flow by making them write me instructions on how to navigate from the desk to the door. I may still do that, but being around the students really showed me how limited their patience is at their age. I would really like to teach them code, but where does one start? I worked really hard to make it as simple as possible, so that it reads succinctly in plain english. I think I would be able to do it if I was one on one with each student, but they outnumber me and definitely control their classroom. I think if I didn’t have a team leader, I’d feel more pressure to get start upping the attitude and getting them to focus.
+
+The main problem right now is the computer environment. Seeing the game run 1 FPS was very disheartening. The game I made was supposed to launch this apprenticeship, and WOW and inspire them to make their own game. I lost a huge part of my momentum because of these computers, but I will call their IT department tomorrow and try to figure something out. I’m almost considering putting a separate bootable OS on each of the thumbdrives to circumvent this problem. That’s a little drastic, but I have nothing to work with to make an enjoyable game.
+
+I don’t know what to do yet. I’m trying not think about it too much. Need time to recharge. I know they’re smarter than I give them credit for, since some kids took to some things very quickly. I think if I help them in the direction that they want to go instead of dragging them back to the core principles of programming, they’ll make progress. That’s a lot of meta-talk though.
