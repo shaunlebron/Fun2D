@@ -1,18 +1,22 @@
 # Fun2D
 
 Fun2D is a game-maker that I created for a class of 6th grade students at Jane
-Long Middle School as part of after-school program lead by [Citizen
-Schools](http://www.citizenschools.org/).  The students used it to learn how to
-create a game over a 10-week period in the Fall Semester of 2010.
+Long Middle School, for an after-school apprenticeship program organized by
+[Citizen Schools](http://www.citizenschools.org/).  The students used it to
+learn how to create a game over a 10-week period in the Fall Semester of 2010.
 
 ![screenshot](screenshot.png)
 
-A key feature of Fun2D was its ability on Windows without installation.  During
-the 2010 program, each student was given a USB drive containing Fun2D.  This
+A key feature of Fun2D is its ability to run on Windows without installation,
+necessitated by the computer permission restrictions at the school and the
+absence of a computer lab staff.
+
+During the 2010 program, each student was given a USB drive containing Fun2D.  This
 allowed them to plug the USB drive into any computer (home or school lab) and
 run it straight from the USB drive without installation.  The USB Drive also
-acted as saved storage for their game they were creating.  (All the students
-were given the USB drives after the program ended.)
+acted as saved storage for their game they were creating.  All the students
+were given the USB drives after the program ended so they could keep their
+games and continue developing on their home computers.
 
 ## Objective
 
