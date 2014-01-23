@@ -51,6 +51,8 @@ Running the game from the editor causes everything in the code editor to be
 saved as "game.lua". This file, along with the custom Lua files found in the
 "common" directory, are then fed into the Love2D executable to run the game.
 
+The editor was made portable with Xenocode Postbuild.
+
 ## Creating an image
 
 You can create and preview images from the editor:
