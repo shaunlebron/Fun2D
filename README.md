@@ -42,11 +42,14 @@ same directory.
 
 ## Tech Details
 
-Fun2D is an editor + game framework.  The editor is a C# .NET WinForms application that
-shows a code editor as well as a paint editor (MSPaint).  The game framework
-is a heavily simplified layer over [Love2D](https://love2d.org/).  Thus, everything
-in the code editor is saved as "game.lua" and is run together with all the other
-Lua files in the "common" directory, which are fed into the Love2D executable to run the game.
+Fun2D is an editor + game framework.  The editor is a C# .NET WinForms
+application that shows a code editor ([SyntaxBox](http://code.google.com/p/alsing/wiki/SyntaxBox)) as well as a
+paint editor (MSPaint).  The game framework is a heavily simplified layer over
+[Love2D](https://love2d.org/).
+
+Running the game from the editor causes everything in the code editor to be
+saved as "game.lua". This file, along with the custom Lua files found in the
+"common" directory, are then fed into the Love2D executable to run the game.
 
 ## Creating an image
 
