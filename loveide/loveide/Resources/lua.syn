@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Language Name="LUA" Startblock="Code">
+	<FileTypes>
+		<FileType Extension=".lua" Name="LUA Source File"/>
+	</FileTypes>
+
+	<Block Name="Code" Style="Code" IsMultiline="true">
+		<!-- Keywords that can exist inside this block -->
+    
+		<Keywords>
+			<PatternGroup Name="Keywords" Style="Keyword" CaseSensitive="true">
+				<Patterns>
+					and
+					break
+					do
+					else
+					elseif
+					end
+					for
+					function
+					if
+					in
+					local
+					not
+					or
+					repeat
+					return
+					then
+					until
+					while
+				</Patterns>
+			</PatternGroup>
+
+			<PatternGroup Name="Constants" Style="Constant">
+				<Patterns>
+					false
+					nil
+					true
+				</Patterns>
+			</PatternGroup>
+
+			<PatternGroup Name="Numbers" Style="Number">
+				<Pattern Text="([0-9]+)" IsComplex="true" />
+			</PatternGroup>
+
+		</Keywords>
+
+		<!-- Operators that can exist inside this block -->
+		<Operators>
+			<PatternGroup name="Operators" Style="Operator">
+				<!--<Pattern Text="." />-->
+				<Pattern Text="!" />
+				<Pattern Text=":" />
+				<Pattern Text="^" />
+				<Pattern Text="*" />
+				<Pattern Text="/" />
+				<Pattern Text="+" />
+				<Pattern Text="-" />
+				<Pattern Text="=" />
+				<Pattern Text=";" />
+				<Pattern Text="|" />
+				<Pattern Text=".." />
+			</PatternGroup>
+		</Operators>
+		<!-- Blocks that can exist inside this block -->
+		<ChildBlocks>
+			<Child Name="Multiline Comment" />
+			<Child Name="Singleline Comment" />
+			<Child Name="String" />
+			<Child Name="Char" />
+			<Child Name="Code" />
+		</ChildBlocks>
+	</Block>
+
+	<Block Name="Multiline Comment" Style="Comment"  IsMultiline="true">
+		<Scope Start="--[[" End="]]" Style="Comment" Text="--[[...]]"/>
+	</Block>
+	<Block Name="Singleline Comment" Style="Comment"  IsMultiline="false">
+		<Scope Start="--" End="" Style="Comment" />
+	</Block>
+	<Block Name="String" Style="String" IsMultiline="true">
+		<Scope Start="&quot;" End="&quot;" EscapeChar="\" Style="String" />
+	</Block>
+
+	<Block Name="Char" Style="String" EscapeChar="" IsMultiline="false">
+		<Scope Start="'" End="'"  EscapeChar="\" Style="String" />
+	</Block>
+
+  <!--
+	<Style Name="Code" ForeColor="" BackColor="" Bold="false" Italic="false" Underline="false" />
+	<Style Name="Comment" ForeColor="#8C868F" BackColor="" Bold="false" Italic="false" Underline="false" />
+	<Style Name="String" ForeColor="#409B1C" BackColor="" Bold="false" Italic="false" Underline="false" />
+	<Style Name="Number" ForeColor="#3B5BB5" BackColor="" Bold="false" Italic="false" Underline="false" />
+	<Style Name="Keyword" ForeColor="#FF7800" BackColor="" Bold="false" Italic="false" Underline="false" />
+	<Style Name="LoveKeyword" ForeColor="DarkRed" 	BackColor="" Bold="false" Italic="false" Underline="false" />
+	<Style Name="Constant" ForeColor="#3B5BB5" BackColor="" Bold="false" Italic="false" Underline="false" />
+  <Style Name="Operators" ForeColor="#3B5BB5" />
+  -->
+
+  <Style Name="Code" ForeColor="#28465C" BackColor="" Bold="false" Italic="false" Underline="false" />
+  <Style Name="Comment" ForeColor="#888888" BackColor="" Bold="false" Italic="false" Underline="false" />
+  <Style Name="String" ForeColor="#008000" BackColor="" Bold="false" Italic="false" Underline="false" />
+  <Style Name="Number" ForeColor="#FF0000" BackColor="" Bold="false" Italic="false" Underline="false" />
+  <Style Name="Keyword" ForeColor="#0D8BCA" BackColor="" Bold="false" Italic="false" Underline="false" />
+  <Style Name="LoveKeyword" ForeColor="DarkRed" 	BackColor="" Bold="false" Italic="false" Underline="false" />
+  <Style Name="Constant" ForeColor="#3B5BB5" BackColor="" Bold="false" Italic="false" Underline="false" />
+  <Style Name="Operators" ForeColor="#3B5BB5" />
+
+</Language>
